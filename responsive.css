@@ -1,0 +1,27 @@
+@media only screen and (max-width: 960px) {
+    body{
+        background-image: url('images/bg-intro-mobile.png');
+    }
+    .form-registration{
+    flex-direction: column;
+ }
+ .learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 0.3;
+ }
+.learn h2 {
+        font-size: 30px;
+        line-height: 1cm;
+        }
+
+    form{
+        padding: 10px 20px;
+    }
+
+    .form-registration{
+        width: 90%;
+    }
+}

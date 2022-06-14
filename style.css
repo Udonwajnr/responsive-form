@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --red:hsl(0, 100%, 74%);
+    --green:hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --Font-size: 16px;
+    --Weights: 400, 500, 600, 700;
+    --font-family:'Poppins',sans-serif;
+
+}
+/* universal tags */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--font-family);
+    background-image:url('images/bg-intro-desktop.png');
+    position: relative;
+    height: 100vh;
+    font-size: 16px;
+}
+
+
+/* universal tag ending */
+/* .overlay */
+.overlay-background{
+    background-color:rgba(255, 122, 122,1);
+    mix-blend-mode: hue;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+/* .overlay ending*/
+
+.form-header{
+    background-color: var(--Blue);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+/* form registration */
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position: relative;
+    height: 100vh;
+}
+
+.form-registration{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
+}
+
+ .learn{
+        flex: 0.5;
+        color: #fff;
+    }
+ .learn h2{
+        flex: 0.5;
+        color: #fff;
+        font-size: 45px;
+        line-height: 1.5cm;
+}
+.learn p{
+    margin-top: 25px;
+}
+
+.form{
+    flex: 0.5;
+}
+
+form{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.form-input{
+    margin-top: 15px;
+}
+
+ input::placeholder{
+        text-transform: capitalize;
+}
+
+.form form input{
+        width: 100%;
+        height: 45px;
+        padding: 20px;
+        border: var(--Grayish-Blue) 1px solid;
+        border-radius: 3px;
+ }
+
+.form form input:focus{
+    outline: none;
+    border: 1px var(--Dark-Blue) solid;    
+}
+.small-text{
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin-top: 10px;
+}
+.small-text a{
+    color: var(--red);
+}
+
+.submit{
+    margin-top: 15px;
+}
+
+.submit button{
+    width: 100%;
+    padding:15px 20px ;
+    background-color:var(--green) ;
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+/* form registration ending */
+
